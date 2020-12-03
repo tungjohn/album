@@ -1,0 +1,8 @@
+12.3: tạo bảng csdl
+
+nv4_vi_album_info
+
+id album_name album_thumbnail album_desc creat_by_user_id active create_time
+
+nv4_vi_album_image
+image_id album_id image image_desc creat_by_userid active create_time
