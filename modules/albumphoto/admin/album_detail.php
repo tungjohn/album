@@ -176,7 +176,7 @@ foreach ($result as $data)
     $xtpl->parse('main.dataLoop');
 }
 
-$base_url = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&amp;' . NV_NAME_VARIABLE . '=' . $module_name . '&amp;' . NV_OP_VARIABLE . '=album_detail';
+$base_url = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&amp;' . NV_NAME_VARIABLE . '=' . $module_name . '&amp;' . NV_OP_VARIABLE . '=album_detail' . '&album_id=' . $post['album_id'];
 $generate_page = nv_generate_page($base_url, $total, $perpage, $page);
 $xtpl->assign('GENERATE_PAGE', $generate_page);
 
